@@ -30,3 +30,20 @@ app.get("/products", async (req, res) => {
   res.status(200);
   res.send(results);
 });
+
+app.delete("/product/:id", async (req, res) => {
+  try {
+    const id = Number(req.params.id);
+    await client.connect();
+    console.log("Product to delete :", id);
+    const query = { id: id };
+    const productDeleted = await db.collection("product").findOne(query);
+    // delete
+    const results = await db.collection("product").deleteOne(query);
+    res.status(200);
+    res.send(productDeleted);
+  } catch (error) {
+    console.error("Error deleting product:", error);
+    res.status(500).send({ message: "Internal Server Error" });
+  }
+});
