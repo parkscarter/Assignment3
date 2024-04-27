@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+/* Links */
+a:visited {
+    color: #4a5568; /* Grayish-blue */
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navigation Bar */
+#navBar {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navButton {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #edf2f7; /* Light gray */
+    color: #2d3748; /* Dark gray */
+    border: 2px solid #e2e8f0; /* Light gray border */
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Form Inputs */
+.formInfoIndividual {
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+    padding-left: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Product Container */
+#getProductsContainer {
+    margin-top: 10px;
+}
+
+.individualProduct {
+    float: left;
+    margin: 10px;
+    background-color: #f7fafc; /* Light blue-gray */
+    padding: 10px;
+    border: 2px solid #cbd5e0; /* Light blue-gray border */
+    border-radius: 10px;
+}
+
+/* Product Details */
+.productTitle {
+    width: 28vw;
+    font-size: 24px;
+    text-align: center;
+}
+
+.productImage {
+    width: 28vw;
+    border: 2px solid #cbd5e0; /* Light blue-gray border */
+    border-radius: 10px;
+}
+
+.productCategory {
+    width: 28vw;
+    font-size: 17px;
+}
+
+.productDescription {
+    width: 28vw;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.productPrice {
+    display: inline;
+    max-width: 14vw;
+    font-size: 15px;
+}
+
+.productRating {
+    float: right;
+    margin-left: 10px;
+    max-width: 14vw;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Update Screen */
+.updateScreen {
+    float: left;
+}
+
+.selectButton,
+#indexButton,
+#updateButton,
+.deleteButton {
+    margin: 5px;
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.selectButton {
+    background-color: #ed8936; /* Orange */
+    color: white;
+    border: 2px solid #dd6b20; /* Dark orange */
+}
+
+#indexButton,
+#updateButton {
+    background-color: #2b6cb0; /* Blue */
+    color: white;
+    border: 2px solid #2c5282; /* Dark blue */
+}
+
+.deleteButton {
+    background-color: #e53e3e; /* Red */
+    color: white;
+    border: 2px solid #c53030; /* Dark red */
+}
+
+/* About Section */
+#aboutGeneral {
+    width: 700px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #4a5568; /* Grayish-blue border */
+    background-color: #f7fafc; /* Light blue-gray */
+}
+
+#aboutTitle {
+    font-size: 25px;
+}
+
+#aboutDate {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#aboutParagraph {
+    text-align: center;
+    line-height: 1.5;
+}
+
+#allPeople {
+    width: 100px;
+    margin: auto;
+}
+
+.aboutInfo {
+    width: 32%;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #4a5568; /* Grayish-blue border */
+}
+
+.personName {
+    font-weight: bold;
 }
